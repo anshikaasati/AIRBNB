@@ -1,0 +1,187 @@
+{
+  "id": "listing_1",
+  "title": "Redwood Forest Glass Cabin & Spa Retreat",
+  "location": "Guerneville, California, United States",
+  "photos": [
+    {
+      "id": "p1",
+      "src": "/images/hero-1.jpg",
+      "alt": "Exterior view of Redwood Forest Glass Cabin surrounded by towering redwoods at dusk",
+      "category": "Exterior",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "id": "p2",
+      "src": "/images/hero-2.jpg",
+      "alt": "Modern cozy living room featuring high ceilings, warm fireplace, and full glass windows looking out to the forest",
+      "category": "Living Room",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "p3",
+      "src": "/images/hero-3.jpg",
+      "alt": "Master bedroom layout showing a queen-size bed, crisp white linens, and large panoramic forest views",
+      "category": "Bedroom",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "p4",
+      "src": "/images/hero-4.jpg",
+      "alt": "Fully-equipped kitchen space featuring modern appliances, wooden countertops, and breakfast bar",
+      "category": "Kitchen",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "p5",
+      "src": "/images/hero-5.jpg",
+      "alt": "Luxury bathroom layout showcasing a free-standing copper bathtub and custom tiled walk-in shower",
+      "category": "Bathroom",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "p6",
+      "src": "/images/gallery-6.jpg",
+      "alt": "Spacious outdoor wooden deck with comfortable patio chairs and forest canopy views",
+      "category": "Deck & Outdoors",
+      "width": 800,
+      "height": 600
+    }
+  ],
+  "host": {
+    "name": "Sarah",
+    "avatarSrc": "/images/host-avatar.jpg",
+    "isSuperhost": true,
+    "yearsHosting": 5
+  },
+  "amenities": [
+    {
+      "id": "a1",
+      "label": "Private cedar hot tub",
+      "icon": "hot_tub",
+      "available": true
+    },
+    {
+      "id": "a2",
+      "label": "Indoor gas fireplace",
+      "icon": "fireplace",
+      "available": true
+    },
+    {
+      "id": "a3",
+      "label": "Wifi (150 Mbps download speed)",
+      "icon": "wifi",
+      "available": true
+    },
+    {
+      "id": "a4",
+      "label": "Dedicated workspace desk",
+      "icon": "workspace",
+      "available": true
+    },
+    {
+      "id": "a5",
+      "label": "Free parking on premises",
+      "icon": "parking",
+      "available": true
+    },
+    {
+      "id": "a6",
+      "label": "Fully equipped modern kitchen",
+      "icon": "kitchen",
+      "available": true
+    },
+    {
+      "id": "a7",
+      "label": "Air conditioning",
+      "icon": "ac",
+      "available": true
+    },
+    {
+      "id": "a8",
+      "label": "Copper soaking bathtub",
+      "icon": "bathtub",
+      "available": true
+    },
+    {
+      "id": "a9",
+      "label": "EV charger in garage",
+      "icon": "ev_charger",
+      "available": false
+    },
+    {
+      "id": "a10",
+      "label": "Private swimming pool",
+      "icon": "pool",
+      "available": false
+    }
+  ],
+  "description": "Nestled deep in the heart of the Guerneville redwoods, this architecturally unique Glass Cabin offers a perfect synthesis of modern luxury and raw, undisturbed nature. Immerse yourself in the serene forest views visible through towering 18-foot floor-to-ceiling windows.\n\nRelax in the outdoor cedar hot tub under a canopy of ancient trees, warm up next to the internal gas fireplace, or prepare a gourmet meal in our chef's kitchen. It is an ideal escape for couples, writers, or anyone seeking to disconnect, unwind, and recharge in a premium woodland setting. Strictly no events or parties allowed.",
+  "ratingBreakdown": {
+    "overall": 4.92,
+    "reviewCount": 128,
+    "categories": [
+      {
+        "label": "Cleanliness",
+        "score": 4.9
+      },
+      {
+        "label": "Accuracy",
+        "score": 4.9
+      },
+      {
+        "label": "Communication",
+        "score": 5.0
+      },
+      {
+        "label": "Location",
+        "score": 4.9
+      },
+      {
+        "label": "Check-in",
+        "score": 5.0
+      },
+      {
+        "label": "Value",
+        "score": 4.8
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "id": "r1",
+      "authorName": "David",
+      "authorAvatarSrc": "/images/rev-1.jpg",
+      "rating": 5,
+      "date": "June 2026",
+      "text": "Absolutely magical stay. The glass windows make you feel like you are sleeping in the forest canopy itself. The attention to detail, clean finishes, and spa amenities were top-tier. Sarah was an amazing, prompt host. We will definitely be back!"
+    },
+    {
+      "id": "r2",
+      "authorName": "Emma",
+      "authorAvatarSrc": "/images/rev-2.jpg",
+      "rating": 5,
+      "date": "May 2026",
+      "text": "An incredible woodland oasis. The hot tub was hot, clean, and perfectly situated. Bed was incredibly comfortable, and the kitchen had everything we needed to cook a full dinner. Highly recommend for a relaxing retreat!"
+    },
+    {
+      "id": "r3",
+      "authorName": "Michael",
+      "authorAvatarSrc": "/images/rev-3.jpg",
+      "rating": 4.8,
+      "date": "April 2026",
+      "text": "Beautiful architecture and stunning location. Extremely quiet and relaxing. The soak tub was a highlight. Note that cell service is weak, but the high-speed Wifi worked flawlessly. Great host communication."
+    }
+  ],
+  "pricePerNight": 350,
+  "currency": "$",
+  "mapCoordinates": {
+    "lat": 38.5012,
+    "lng": -123.0012
+  },
+  "address": "Guerneville, California, United States"
+}
