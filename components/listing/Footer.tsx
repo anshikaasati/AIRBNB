@@ -20,7 +20,7 @@ export function Footer() {
 
   return (
     <footer className="bg-airbnb-light-gray border-t border-airbnb-border mt-12 py-12 text-sm text-airbnb-ink select-none">
-      <div className={`${LAYOUT.CONTAINER_MAX_WIDTH} mx-auto px-6 md:px-10`}>
+      <div className={`${LAYOUT.CONTAINER_MAX_WIDTH} mx-auto px-6 md:px-10 lg:px-20`}>
         {/* Link Columns Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-airbnb-border">
           {footerLinks.map((section) => (

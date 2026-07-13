@@ -28,7 +28,7 @@ export function PhotoGrid({ listing }: PhotoGridProps) {
           <button
             key={photo.id}
             type="button"
-            onClick={() => openOverlay("lightbox", index)}
+            onClick={() => openOverlay("photoTour", index)}
             className={`${gridClasses} relative overflow-hidden group w-full h-full text-left focus:outline-none`}
             aria-label={`View photo ${index + 1}: ${photo.alt}`}
           >

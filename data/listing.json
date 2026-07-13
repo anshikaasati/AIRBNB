@@ -1,137 +1,181 @@
 {
-  "id": "listing_1",
-  "title": "Redwood Forest Glass Cabin & Spa Retreat",
-  "location": "Guerneville, California, United States",
+  "id": "romantic_jacuzzi_1bhk_candolim",
+  "title": "Romantic Jacuzzi 1BHK Candolim | Mirashya UG10",
+  "location": "Candolim, Goa, India",
   "photos": [
     {
       "id": "p1",
-      "src": "/images/hero-1.jpg",
-      "alt": "Exterior view of Redwood Forest Glass Cabin surrounded by towering redwoods at dusk",
-      "category": "Exterior",
-      "width": 1200,
-      "height": 800
+      "src": "/images/patio.jpg",
+      "alt": "Spacious outdoor patio with comfortable chairs, green plants, and warm lighting",
+      "category": "Living room 2",
+      "width": 800,
+      "height": 600
     },
     {
       "id": "p2",
-      "src": "/images/hero-2.jpg",
-      "alt": "Modern cozy living room featuring high ceilings, warm fireplace, and full glass windows looking out to the forest",
-      "category": "Living Room",
+      "src": "/images/living-1.jpg",
+      "alt": "Cozy living room space showing styled sofa, modern interiors, and warm lights",
+      "category": "Living room 1",
       "width": 800,
       "height": 600
     },
     {
       "id": "p3",
-      "src": "/images/hero-3.jpg",
-      "alt": "Master bedroom layout showing a queen-size bed, crisp white linens, and large panoramic forest views",
-      "category": "Bedroom",
+      "src": "/images/jacuzzi.jpg",
+      "alt": "Luxury outdoor jacuzzi hot tub situated on a clean tiled deck surrounded by plants",
+      "category": "Living room 2",
       "width": 800,
       "height": 600
     },
     {
       "id": "p4",
-      "src": "/images/hero-4.jpg",
-      "alt": "Fully-equipped kitchen space featuring modern appliances, wooden countertops, and breakfast bar",
-      "category": "Kitchen",
+      "src": "/images/bedroom.jpg",
+      "alt": "Master bedroom containing a clean double bed, warm lighting, and air conditioning",
+      "category": "Bedroom",
       "width": 800,
       "height": 600
     },
     {
       "id": "p5",
-      "src": "/images/hero-5.jpg",
-      "alt": "Luxury bathroom layout showcasing a free-standing copper bathtub and custom tiled walk-in shower",
-      "category": "Bathroom",
+      "src": "/images/exterior.jpg",
+      "alt": "Exterior front view of the premium apartment building in Candolim",
+      "category": "Exterior",
       "width": 800,
       "height": 600
     },
     {
       "id": "p6",
-      "src": "/images/gallery-6.jpg",
-      "alt": "Spacious outdoor wooden deck with comfortable patio chairs and forest canopy views",
-      "category": "Deck & Outdoors",
+      "src": "/images/kitchen.jpg",
+      "alt": "Fully equipped kitchen showing counter top stove and cupboards",
+      "category": "Full kitchen",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "p7",
+      "src": "/images/bathroom.jpg",
+      "alt": "Full bathroom showing clean tiles, wash basin, and shower",
+      "category": "Full bathroom",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "p8",
+      "src": "/images/gym.jpg",
+      "alt": "Gym room with weights and workout machines",
+      "category": "Gym",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "p9",
+      "src": "/images/pool.jpg",
+      "alt": "Shared swimming pool inside the building courtyard",
+      "category": "Pool",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "p10",
+      "src": "/images/living-2.jpg",
+      "alt": "Second angle of living room showing kitchen dining table",
+      "category": "Living room 1",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "p11",
+      "src": "/images/additional.jpg",
+      "alt": "Cozy corner detail showing clean modern interiors",
+      "category": "Additional photos",
       "width": 800,
       "height": 600
     }
   ],
   "host": {
-    "name": "Sarah",
+    "name": "Mirashya Homes",
     "avatarSrc": "/images/host-avatar.jpg",
     "isSuperhost": true,
-    "yearsHosting": 5
+    "yearsHosting": 2
   },
   "amenities": [
     {
       "id": "a1",
-      "label": "Private cedar hot tub",
-      "icon": "hot_tub",
+      "label": "Kitchen",
+      "icon": "kitchen",
       "available": true
     },
     {
       "id": "a2",
-      "label": "Indoor gas fireplace",
-      "icon": "fireplace",
-      "available": true
-    },
-    {
-      "id": "a3",
-      "label": "Wifi (150 Mbps download speed)",
+      "label": "Wifi",
       "icon": "wifi",
       "available": true
     },
     {
-      "id": "a4",
-      "label": "Dedicated workspace desk",
+      "id": "a3",
+      "label": "Dedicated workspace",
       "icon": "workspace",
       "available": true
     },
     {
-      "id": "a5",
+      "id": "a4",
       "label": "Free parking on premises",
       "icon": "parking",
       "available": true
     },
     {
+      "id": "a5",
+      "label": "Pool",
+      "icon": "pool",
+      "available": true
+    },
+    {
       "id": "a6",
-      "label": "Fully equipped modern kitchen",
-      "icon": "kitchen",
+      "label": "Hot tub",
+      "icon": "hot_tub",
       "available": true
     },
     {
       "id": "a7",
-      "label": "Air conditioning",
+      "label": "Pets allowed",
       "icon": "ac",
       "available": true
     },
     {
       "id": "a8",
-      "label": "Copper soaking bathtub",
-      "icon": "bathtub",
+      "label": "Exterior security cameras on property",
+      "icon": "ac",
       "available": true
     },
     {
       "id": "a9",
-      "label": "EV charger in garage",
-      "icon": "ev_charger",
+      "label": "Carbon monoxide alarm",
+      "icon": "ac",
       "available": false
     },
     {
       "id": "a10",
-      "label": "Private swimming pool",
-      "icon": "pool",
+      "label": "Smoke alarm",
+      "icon": "ac",
       "available": false
     }
   ],
-  "description": "Nestled deep in the heart of the Guerneville redwoods, this architecturally unique Glass Cabin offers a perfect synthesis of modern luxury and raw, undisturbed nature. Immerse yourself in the serene forest views visible through towering 18-foot floor-to-ceiling windows.\n\nRelax in the outdoor cedar hot tub under a canopy of ancient trees, warm up next to the internal gas fireplace, or prepare a gourmet meal in our chef's kitchen. It is an ideal escape for couples, writers, or anyone seeking to disconnect, unwind, and recharge in a premium woodland setting. Strictly no events or parties allowed.",
+  "description": "🌴 Plan Your Relaxing Holiday at Amor De Goa by Mirashya Homes! 🌴\n\nStay in this cozy 1BHK in the heart of Candolim, featuring a private jacuzzi 🛁 for the perfect unwind. Enjoy high-speed WiFi 📶, Smart TV 📺, pet-friendly comfort 🐾, and stylish interiors.\n\nJust minutes from Candolim Beach 🏖️, popular cafes, restaurants, and nightlife 🍷, it's the perfect spot for your next Goan getaway.",
   "ratingBreakdown": {
-    "overall": 4.92,
-    "reviewCount": 128,
+    "overall": 4.95,
+    "reviewCount": 19,
     "categories": [
       {
         "label": "Cleanliness",
-        "score": 4.9
+        "score": 5.0
       },
       {
         "label": "Accuracy",
-        "score": 4.9
+        "score": 5.0
+      },
+      {
+        "label": "Check-in",
+        "score": 5.0
       },
       {
         "label": "Communication",
@@ -139,11 +183,7 @@
       },
       {
         "label": "Location",
-        "score": 4.9
-      },
-      {
-        "label": "Check-in",
-        "score": 5.0
+        "score": 4.8
       },
       {
         "label": "Value",
@@ -154,34 +194,58 @@
   "reviews": [
     {
       "id": "r1",
-      "authorName": "David",
+      "authorName": "Amit",
       "authorAvatarSrc": "/images/rev-1.jpg",
       "rating": 5,
       "date": "June 2026",
-      "text": "Absolutely magical stay. The glass windows make you feel like you are sleeping in the forest canopy itself. The attention to detail, clean finishes, and spa amenities were top-tier. Sarah was an amazing, prompt host. We will definitely be back!"
+      "text": "Very helpful and responsive team. Safe and peaceful stay, loved everything about the property."
     },
     {
       "id": "r2",
-      "authorName": "Emma",
+      "authorName": "Aheesh",
       "authorAvatarSrc": "/images/rev-2.jpg",
       "rating": 5,
-      "date": "May 2026",
-      "text": "An incredible woodland oasis. The hot tub was hot, clean, and perfectly situated. Bed was incredibly comfortable, and the kitchen had everything we needed to cook a full dinner. Highly recommend for a relaxing retreat!"
+      "date": "June 2026",
+      "text": "We had a wonderful stay. The apartment was clean, comfortable, and exactly as shown in the photos. The host was very responsive and helpful throughout our stay. We would definitely recommend this place and would love to stay here again."
     },
     {
       "id": "r3",
-      "authorName": "Michael",
+      "authorName": "Samiksha",
       "authorAvatarSrc": "/images/rev-3.jpg",
-      "rating": 4.8,
-      "date": "April 2026",
-      "text": "Beautiful architecture and stunning location. Extremely quiet and relaxing. The soak tub was a highlight. Note that cell service is weak, but the high-speed Wifi worked flawlessly. Great host communication."
+      "rating": 5,
+      "date": "May 2026",
+      "text": "the host nitish was really great help"
+    },
+    {
+      "id": "r4",
+      "authorName": "Vedant",
+      "authorAvatarSrc": "/images/rev-4.jpg",
+      "rating": 5,
+      "date": "May 2026",
+      "text": "We had an amazing stay at this property in Goa! The entire home was spotless and exceptionally well-maintained, making us feel comfortable from the moment we arrived. The cleanliness standards were truly impressive, with every corner of the house looking fresh and pristine..."
+    },
+    {
+      "id": "r5",
+      "authorName": "Vaibhav S",
+      "authorAvatarSrc": "/images/rev-5.jpg",
+      "rating": 5,
+      "date": "May 2026",
+      "text": "Great experience living out there , can't expect more , will always look for it in the future and will recommend my friends too."
+    },
+    {
+      "id": "r6",
+      "authorName": "Mohd",
+      "authorAvatarSrc": "/images/rev-6.jpg",
+      "rating": 5,
+      "date": "May 2026",
+      "text": "Great place. Exactly as described in the listing."
     }
   ],
-  "pricePerNight": 350,
-  "currency": "$",
+  "pricePerNight": 5700,
+  "currency": "₹",
   "mapCoordinates": {
-    "lat": 38.5012,
-    "lng": -123.0012
+    "lat": 15.5164,
+    "lng": 73.7632
   },
-  "address": "Guerneville, California, United States"
+  "address": "Candolim, Goa, India"
 }

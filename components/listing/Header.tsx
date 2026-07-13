@@ -1,12 +1,11 @@
 import React from "react";
 import { LAYOUT } from "../../lib/constants";
 import { FaGlobe, FaBars } from "react-icons/fa6";
-import Image from "next/image";
 
 export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-airbnb-border h-20 flex items-center">
-      <div className={`w-full ${LAYOUT.HEADER_MAX_WIDTH} mx-auto px-6 md:px-10 flex items-center justify-between`}>
+      <div className={`w-full ${LAYOUT.HEADER_MAX_WIDTH} mx-auto px-6 md:px-10 lg:px-20 flex items-center justify-between`}>
         {/* Logo */}
         <div className="flex items-center text-airbnb-rausch cursor-pointer select-none">
           <svg
@@ -26,7 +25,7 @@ export function Header() {
             Anywhere
           </button>
           <button type="button" className="text-sm font-semibold px-4 border-r border-airbnb-border text-airbnb-ink">
-            Any week
+            Anytime
           </button>
           <button type="button" className="text-sm font-medium px-4 text-airbnb-gray">
             Add guests
@@ -54,7 +53,7 @@ export function Header() {
             type="button"
             className="text-sm font-semibold py-2 px-4 rounded-full hover:bg-airbnb-light-gray text-airbnb-ink transition-colors"
           >
-            Airbnb your home
+            Become a host
           </button>
           <button
             type="button"
@@ -65,18 +64,14 @@ export function Header() {
           </button>
           <button
             type="button"
-            className="flex items-center border border-airbnb-border rounded-full p-2 space-x-3 hover:shadow-md transition-shadow bg-white"
+            className="flex items-center border border-airbnb-border rounded-full p-1.5 pl-3.5 space-x-3 hover:shadow-md transition-shadow bg-white"
             aria-label="User menu"
           >
-            <FaBars className="w-4 h-4 text-airbnb-ink ml-1" />
-            <div className="w-8 h-8 rounded-full bg-airbnb-gray overflow-hidden relative">
-              <Image
-                src="/images/host-avatar.jpg"
-                alt="User Profile"
-                fill
-                sizes="32px"
-                className="object-cover"
-              />
+            <FaBars className="w-4 h-4 text-airbnb-ink" />
+            <div className="w-[30px] h-[30px] rounded-full bg-[#717171] text-white flex items-center justify-center relative overflow-hidden">
+              <svg viewBox="0 0 32 32" className="w-full h-full fill-current" aria-hidden="true">
+                <path d="M16 8a5 5 0 100 10 5 5 0 000-10zm-9 16.5a9 9 0 0118 0z" />
+              </svg>
             </div>
           </button>
         </div>
