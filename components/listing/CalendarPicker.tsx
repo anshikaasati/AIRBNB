@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { calculateNights, formatDateLabel } from "../../lib/dateUtils";
 
 
 
@@ -59,22 +60,7 @@ export function CalendarPicker({
     return date > startDate && date < endDate;
   };
 
-  const formatDateLabel = (date: Date | null) => {
-    if (!date) return "";
-    return date.toLocaleDateString("en-GB", {
-      day: "numeric",
-      month: "short",
-      year: "numeric",
-    });
-  };
-
-  const getNightsCount = () => {
-    if (!startDate || !endDate) return 0;
-    const diffTime = Math.abs(endDate.getTime() - startDate.getTime());
-    return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-  };
-
-  const nights = getNightsCount();
+  const nights = calculateNights(startDate, endDate);
 
   const renderMonthGrid = (days: (Date | null)[], monthName: string) => {
     const weekdays = ["S", "M", "T", "W", "T", "F", "S"];

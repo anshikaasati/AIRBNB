@@ -23,6 +23,7 @@ import { OverlayShell } from "../components/overlays/OverlayShell";
 import { PhotoTour } from "../components/overlays/PhotoTour";
 import { Lightbox } from "../components/overlays/Lightbox";
 import { useOverlay } from "../context/OverlayContext";
+import { calculateNights } from "../lib/dateUtils";
 
 export default function Home() {
   const listing = listingData as Listing;
@@ -76,9 +77,7 @@ export default function Home() {
     setStartDate(start);
     setEndDate(end);
     if (start && end) {
-      const diffTime = Math.abs(end.getTime() - start.getTime());
-      const calculatedNights = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-      setNights(calculatedNights);
+      setNights(calculateNights(start, end));
     } else {
       setNights(1); // Reset to base night
     }
