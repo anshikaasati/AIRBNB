@@ -14,32 +14,22 @@ export function PhotoGrid({ listing }: PhotoGridProps) {
   const displayPhotos = listing.photos.slice(0, 5);
 
   return (
-    <section className="relative w-full h-[300px] sm:h-[380px] md:h-[450px] rounded-card overflow-hidden grid grid-cols-4 grid-rows-2 gap-2 bg-airbnb-light-gray select-none">
-      {displayPhotos.map((photo, index) => {
-        // Grid cell styling depending on placement
-        let gridClasses = "";
-        if (index === 0) {
-          gridClasses = "col-span-2 row-span-2";
-        } else {
-          gridClasses = "col-span-1 row-span-1 hidden md:block";
-        }
-
-        return (
+    <section className="_LYTWdd select-none" id="_LYTWdd" aria-label="Photos of this place">
+      <div className="_xabjMC" id="heroGrid">
+        {displayPhotos.map((photo, index) => (
           <button
             key={photo.id}
             type="button"
             onClick={() => openOverlay("photoTour", index)}
-            className={`${gridClasses} relative overflow-hidden group w-full h-full text-left focus:outline-none`}
-            aria-label={`View photo ${index + 1}: ${photo.alt}`}
+            className="_bcKEnm focus:outline-none"
+            aria-label={`Romantic Jacuzzi 1BHK Candolim | Mirashya UG10 image ${index + 1}`}
           >
-            {/* Image wrapper for hover scale */}
-            <div className="w-full h-full relative transition-transform duration-[450ms] ease-[cubic-bezier(0.2,0.8,0.2,1)] group-hover:scale-[1.03]">
+            <div className="w-full h-full relative">
               <Image
                 src={photo.src}
-                alt={photo.alt}
+                alt=""
                 fill
-                priority={index < 3} // Eager load primary elements above fold
-                loading={index >= 3 ? "lazy" : undefined}
+                priority={index < 3}
                 sizes={
                   index === 0
                     ? "(max-width: 768px) 100vw, 50vw"
@@ -47,31 +37,23 @@ export function PhotoGrid({ listing }: PhotoGridProps) {
                 }
                 className="object-cover"
               />
-              {/* Overlay darken effect */}
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-[450ms] ease-[cubic-bezier(0.2,0.8,0.2,1)]" />
             </div>
           </button>
-        );
-      })}
+        ))}
+      </div>
 
-      {/* "Show all photos" trigger button */}
       <button
         type="button"
+        id="showAllPhotos"
         onClick={() => openOverlay("photoTour")}
-        className="absolute bottom-6 right-6 flex items-center space-x-2 bg-white border border-airbnb-ink text-airbnb-ink rounded-lg py-1.5 px-4 font-semibold text-sm shadow-sm hover:bg-airbnb-light-gray transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-airbnb-ink"
+        className="_ocjgQL"
       >
-        <span className="grid grid-cols-3 gap-[3px] w-[14px] h-[14px]">
-          <span className="border border-airbnb-ink rounded-[1px]" />
-          <span className="border border-airbnb-ink rounded-[1px]" />
-          <span className="border border-airbnb-ink rounded-[1px]" />
-          <span className="border border-airbnb-ink rounded-[1px]" />
-          <span className="border border-airbnb-ink rounded-[1px]" />
-          <span className="border border-airbnb-ink rounded-[1px]" />
-          <span className="border border-airbnb-ink rounded-[1px]" />
-          <span className="border border-airbnb-ink rounded-[1px]" />
-          <span className="border border-airbnb-ink rounded-[1px]" />
+        <span className="_bhnFoi">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation" focusable="false" style={{ display: "block", height: "100%", width: "100%", fill: "currentColor" }}>
+            <path fillRule="evenodd" d="M3 11.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm-10-5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm-10-5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z" />
+          </svg>
         </span>
-        <span>Show all photos</span>
+        Show all photos
       </button>
     </section>
   );

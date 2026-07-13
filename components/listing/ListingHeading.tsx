@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { Icon } from "../shared/Icon";
 import { Listing } from "../../types/listing";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -21,38 +20,69 @@ export function ListingHeading({ listing }: ListingHeadingProps) {
   };
 
   return (
-    <section className="py-6 relative">
-      {/* Title & Share/Save Buttons Row */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <h1 className="text-[26px] font-semibold text-airbnb-ink leading-8 tracking-tight max-w-4xl">
-          {listing.title}
-        </h1>
+    <section className="_nqOILr relative" id="photos">
+      <h1 className="_XtZJrm">
+        {listing.title}
+      </h1>
 
-        {/* Share & Save Buttons */}
-        <div className="flex items-center space-x-4 flex-shrink-0 select-none">
-          <button
-            type="button"
-            onClick={handleShareClick}
-            className="flex items-center space-x-2 text-sm font-semibold underline p-2 rounded-lg hover:bg-airbnb-light-gray transition-colors focus:outline-none"
-          >
-            {/* Standard upload/share icon matching standard layout */}
-            <svg viewBox="0 0 32 32" className="w-4 h-4 fill-none stroke-current" strokeWidth="2.5" aria-hidden="true">
-              <path d="M16 2.5v18.5M9.5 9L16 2.5 22.5 9M6 18.5v8a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-8" />
+      <div className="_MIbhFG select-none">
+        <button
+          type="button"
+          id="shareBtn"
+          onClick={handleShareClick}
+          className="_lXWmLq focus:outline-none"
+        >
+          <span className="_ffLphr">
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="presentation"
+              focusable="false"
+              style={{
+                display: "block",
+                height: "100%",
+                width: "100%",
+                fill: "none",
+                stroke: "currentColor",
+                strokeWidth: 2,
+                overflow: "visible"
+              }}
+            >
+              <path d="m27 18v9c0 1.1046-.8954 2-2 2h-18c-1.10457 0-2-.8954-2-2v-9m11-15v21m-10-11 9.2929-9.29289c.3905-.39053 1.0237-.39053 1.4142 0l9.2929 9.29289" />
             </svg>
-            <span>Share</span>
-          </button>
-          <button
-            type="button"
-            onClick={() => setIsSaved(!isSaved)}
-            className="flex items-center space-x-2 text-sm font-semibold underline p-2 rounded-lg hover:bg-airbnb-light-gray transition-colors focus:outline-none"
-          >
-            <Icon
-              name={isSaved ? "heart-filled" : "heart-outline"}
-              className={`w-4 h-4 ${isSaved ? "text-airbnb-rausch" : "text-airbnb-ink"}`}
-            />
-            <span>{isSaved ? "Saved" : "Save"}</span>
-          </button>
-        </div>
+          </span>
+          <span className="_lBQzRQ">Share</span>
+        </button>
+
+        <button
+          type="button"
+          id="saveBtn"
+          onClick={() => setIsSaved(!isSaved)}
+          className="_lXWmLq focus:outline-none"
+        >
+          <span className="_ffLphr">
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="presentation"
+              focusable="false"
+              style={{
+                display: "block",
+                height: "100%",
+                width: "100%",
+                fill: isSaved ? "#e61e4d" : "none",
+                stroke: isSaved ? "#e61e4d" : "currentColor",
+                strokeWidth: 2,
+                overflow: "visible"
+              }}
+            >
+              <path d="m15.9998 28.6668c7.1667-4.8847 14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z" />
+            </svg>
+          </span>
+          <span className="_lBQzRQ">{isSaved ? "Saved" : "Save"}</span>
+        </button>
       </div>
 
       {/* Share Options Toast */}

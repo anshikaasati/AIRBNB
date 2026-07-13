@@ -23,7 +23,6 @@ import { OverlayShell } from "../components/overlays/OverlayShell";
 import { PhotoTour } from "../components/overlays/PhotoTour";
 import { Lightbox } from "../components/overlays/Lightbox";
 import { useOverlay } from "../context/OverlayContext";
-import { LAYOUT } from "../lib/constants";
 
 export default function Home() {
   const listing = listingData as Listing;
@@ -94,7 +93,8 @@ export default function Home() {
       <SubHeader listing={listing} sectionOffsets={sectionOffsets} nights={nights} baseTotal={baseTotal} />
 
       {/* Main Grid Content */}
-      <main className={`flex-1 w-full ${LAYOUT.CONTAINER_MAX_WIDTH} mx-auto px-6 md:px-10 lg:px-20 pb-16`}>
+      <main id="main" className="flex-1 w-full pb-16">
+        <div className="_DyYHYD">
         {/* Listing Title Heading */}
         <ListingHeading listing={listing} />
 
@@ -102,9 +102,9 @@ export default function Home() {
         <PhotoGrid listing={listing} />
 
         {/* Grid split columns: Info pane left, Sticky calculator right */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-6 relative">
+        <div className="_UPwKNi mt-6 relative">
           {/* Details Column */}
-          <div className="lg:col-span-8 space-y-6">
+          <div className="_HlYqcO" id="contentLeft">
             {/* Room Type & Bedding Details Header */}
             <div className="border-b border-airbnb-border pb-6 bg-white select-none">
               <h2 className="text-xl md:text-[22px] font-semibold text-airbnb-ink leading-7">
@@ -133,7 +133,7 @@ export default function Home() {
           </div>
 
           {/* Sticky Calculator Column */}
-          <div className="lg:col-span-4 relative hidden lg:block">
+          <aside className="_nuIcYI hidden lg:block">
             <BookingCard
               listing={listing}
               startDate={startDate}
@@ -145,7 +145,7 @@ export default function Home() {
               onClaimToggle={() => setIsClaimed(!isClaimed)}
               baseTotal={baseTotal}
             />
-          </div>
+          </aside>
         </div>
 
         {/* Full span review grids */}
@@ -155,16 +155,17 @@ export default function Home() {
           />
         </div>
 
-        {/* Full span Meet Your Host */}
-        <MeetYourHost />
-
         {/* Full span Map coordinates */}
         <div ref={locationRef} id="location">
           <LocationMap listing={listing} />
         </div>
 
+        {/* Full span Meet Your Host */}
+        <MeetYourHost />
+
         {/* Full span Nearby Stays */}
         <NearbyStays />
+        </div>
       </main>
 
       {/* Site Footer */}
