@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" rx="16" fill="#1e1e24" />
+  
+  <!-- Title -->
+  <text x="400" y="45" font-family="'Outfit', 'Inter', sans-serif" font-size="24" font-weight="bold" fill="#F3F4F6" text-anchor="middle">Airbnb Clone Architecture Diagram</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="14" fill="#9CA3AF" text-anchor="middle">High-Fidelity Next.js App Router Component Structure &amp; Data Flow</text>
+  
+  <!-- Box 1: View Layer -->
+  <rect x="50" y="110" width="700" height="150" rx="12" fill="#2D2D39" stroke="#E61E4D" stroke-width="2" />
+  <text x="65" y="135" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#E61E4D">1. Component / View Layer (Next.js App Router)</text>
+  
+  <!-- Sub-components inside View Layer -->
+  <rect x="70" y="160" width="120" height="80" rx="8" fill="#3B3B4F" />
+  <text x="130" y="195" font-family="'Inter', sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Header &amp; SubHeader</text>
+  <text x="130" y="215" font-family="'Inter', sans-serif" font-size="10" fill="#D1D5DB" text-anchor="middle">Sticky mini panel</text>
+
+  <rect x="210" y="160" width="120" height="80" rx="8" fill="#3B3B4F" />
+  <text x="270" y="195" font-family="'Inter', sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Details Pane</text>
+  <text x="270" y="215" font-family="'Inter', sans-serif" font-size="10" fill="#D1D5DB" text-anchor="middle">Host, Features, Sleep</text>
+
+  <rect x="350" y="160" width="120" height="80" rx="8" fill="#3B3B4F" />
+  <text x="410" y="195" font-family="'Inter', sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Calendar Picker</text>
+  <text x="410" y="215" font-family="'Inter', sans-serif" font-size="10" fill="#D1D5DB" text-anchor="middle">Oct/Nov 2026 Grid</text>
+
+  <rect x="490" y="160" width="120" height="80" rx="8" fill="#3B3B4F" />
+  <text x="550" y="195" font-family="'Inter', sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Booking Card</text>
+  <text x="550" y="215" font-family="'Inter', sans-serif" font-size="10" fill="#D1D5DB" text-anchor="middle">Price calculations</text>
+
+  <rect x="630" y="160" width="110" height="80" rx="8" fill="#3B3B4F" />
+  <text x="685" y="195" font-family="'Inter', sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Overlays</text>
+  <text x="685" y="215" font-family="'Inter', sans-serif" font-size="10" fill="#D1D5DB" text-anchor="middle">Tour, Lightbox</text>
+
+  <!-- Box 2: State Management & Data Flow -->
+  <rect x="50" y="290" width="700" height="150" rx="12" fill="#2D2D39" stroke="#10B981" stroke-width="2" />
+  <text x="65" y="315" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#10B981">2. State Management &amp; Context Layer</text>
+
+  <!-- States inside State Layer -->
+  <rect x="100" y="340" width="260" height="80" rx="8" fill="#3B3B4F" />
+  <text x="230" y="375" font-family="'Inter', sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Lifted Booking State (page.tsx)</text>
+  <text x="230" y="395" font-family="'Inter', sans-serif" font-size="11" fill="#D1D5DB" text-anchor="middle">startDate, endDate, nights, guests, isClaimed</text>
+
+  <rect x="440" y="340" width="260" height="80" rx="8" fill="#3B3B4F" />
+  <text x="570" y="375" font-family="'Inter', sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">OverlayContext (React Context)</text>
+  <text x="570" y="395" font-family="'Inter', sans-serif" font-size="11" fill="#D1D5DB" text-anchor="middle">activePhotoIndex, isOpen (Tour/Lightbox)</text>
+
+  <!-- Box 3: Data & Helpers Layer -->
+  <rect x="50" y="470" width="700" height="100" rx="12" fill="#2D2D39" stroke="#3B82F6" stroke-width="2" />
+  <text x="65" y="495" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#3B82F6">3. Helpers &amp; Schema Data Layer</text>
+
+  <rect x="80" y="515" width="180" height="40" rx="6" fill="#3B3B4F" />
+  <text x="170" y="539" font-family="'Inter', sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">listing.json (Schema)</text>
+
+  <rect x="310" y="515" width="180" height="40" rx="6" fill="#3B3B4F" />
+  <text x="400" y="539" font-family="'Inter', sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">dateUtils.ts (DRY Helpers)</text>
+
+  <rect x="540" y="515" width="180" height="40" rx="6" fill="#3B3B4F" />
+  <text x="630" y="539" font-family="'Inter', sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">motion.ts (Eases &amp; Transitions)</text>
+
+  <!-- Connective Arrows (View to State) -->
+  <path d="M 230 260 L 230 290" stroke="#9CA3AF" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <path d="M 570 260 L 570 290" stroke="#9CA3AF" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+  <!-- Connective Arrows (State to Helpers/Data) -->
+  <path d="M 230 440 L 230 470" stroke="#9CA3AF" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <path d="M 570 440 L 570 470" stroke="#9CA3AF" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9CA3AF" />
+    </marker>
+  </defs>
+</svg>
